@@ -1,0 +1,16 @@
+# Python cache directory
+**/__pycache__/
+
+# Environment directory
+.venv/
+
+#Environment variables
+*.env
+
+# IDE
+.idea/
+
+# Logs
+**/logs/
+*.log
+*.zip
