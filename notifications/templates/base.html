@@ -1,7 +1,13 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
 
-{% block title %}Peugeot Service{% endblock %}
+    {% block content %}
+    {% endblock %}
 
-{% block content %}
-    <h1>Peugeot notification service</h1>
-{% endblock %}
+</body>
+</html>
