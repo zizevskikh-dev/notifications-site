@@ -2,8 +2,13 @@ from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
 
 
-def car_service_homepage(request: HttpRequest) -> HttpResponse:
+def homepage_view(request: HttpRequest) -> HttpResponse:
+    context = {
+        "header": "Peugeot Car Service",
+    }
+
     return render(
         request=request,
-        template_name="car_service/car_service.html"
+        template_name="car_service/homepage.html",
+        context={"homepage": context},
     )

@@ -1,6 +1,11 @@
 from django.urls import path
-from car_service.views import car_service_homepage
+from car_service.views import homepage_view
+
+
+# Пространство имён приложения
+app_name = "car"
 
 urlpatterns = [
-    path("", car_service_homepage, name='car_service'),
+    # URL: /car-service/parts/
+    path("", homepage_view, name="homepage"),
 ]
