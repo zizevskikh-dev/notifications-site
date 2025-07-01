@@ -1,2 +1,4 @@
 Django==5.2.3
+django-extensions==4.1
+ipython==9.4.0
 black==25.1.0
